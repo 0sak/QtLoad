@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtLoadClass</class>
+ <widget class="QWidget" name="QtLoadClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>318</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtLoad</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(66, 66, 66);</string>
+  </property>
+  <widget class="QPushButton" name="injectButton">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>310</y>
+     <width>91</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(184, 184, 184);</string>
+   </property>
+   <property name="text">
+    <string>Inject</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>261</width>
+     <height>210</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QListWidget" name="processListWidget">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(184, 184, 184);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="procIDLabel">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(184, 184, 184);</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&amp;lt;ProcID&amp;gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="pidLabel">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(184, 184, 184);</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="procNameLabel">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(184, 184, 184);</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&amp;lt;Process Name&amp;gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>261</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QLabel" name="selectedDllLabel">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(184, 184, 184);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&amp;lt;no Selected DLL&amp;gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="selectDllButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(184, 184, 184);</string>
+      </property>
+      <property name="text">
+       <string>Select DLL</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qtload.qrc"/>
+ </resources>
+ <connections/>
+</ui>
